@@ -4,9 +4,9 @@ export const getUser = (req, res) => {
   const { _id, displayName, email, photo } = req.user;
   res.json({
     id: _id,
-    name: displayName,   // ✅ rename
+    name: displayName,  
     email,
-    avatar: photo        // ✅ rename
+    avatar: photo       
   });
 };
 
@@ -17,7 +17,7 @@ export const logoutUser = (req, res) => {
       console.error('Logout error:', err);
       return res.status(500).json({ message: 'Failed to logout' });
     }
-    res.clearCookie('connect.sid'); // ✅ clear session cookie if using express-session
-    res.status(200).json({ message: 'Logged out successfully' }); // ✅ send JSON
+    res.clearCookie('connect.sid'); 
+    res.status(200).json({ message: 'Logged out successfully' }); 
   });
 };
