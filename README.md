@@ -1,6 +1,6 @@
 # Search Flick
 
-A full-stack image searching web app where users can find and explore High quality images from Unsplash
+A full-stack web app that lets users search and browse stunning, high-resolution images from Unsplash, with secure Google OAuth integration for easy sign-in and session management.
 
 
 
@@ -49,7 +49,7 @@ A full-stack image searching web app where users can find and explore High quali
 
 ## 📂 Project Structure
 ```
-search-flick/
+Search-Flick/
 ├─ client/
 │  ├─ src/
 │  │  ├─ components/
@@ -125,7 +125,6 @@ cd server
 create .env file with following variables
 ```bash
 
-
  PORT=5000
  MONGO_URI=your-mongodb-string
  SESSION_SECRET=random-session-key
@@ -152,7 +151,7 @@ npm start
 
 # in new terminal
 cd  Search-Flick/client
-#create a .env file with VITE_API_BASE=http://localhost:5000/
+#create a .env file with VITE_API_BASE_URL=http://localhost:5000/
 npm install
 npm run dev
 ```
